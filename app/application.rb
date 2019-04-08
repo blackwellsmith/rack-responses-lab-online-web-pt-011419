@@ -3,7 +3,7 @@ class Time
   def call(env)
     resp = Rack::Response.new
     
-    time = Kernal.rand(1..24)
+    time = Time.new
     
     if time >= 12
       resp.write "Good Afternoon!"
