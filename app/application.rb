@@ -5,7 +5,7 @@ class Application
     resp = Rack::Response.new
     
     time = Time.now.hour
-    binding.pry
+   # binding.pry
     if time >= 12
       resp.write "Good Afternoon!"
     else
